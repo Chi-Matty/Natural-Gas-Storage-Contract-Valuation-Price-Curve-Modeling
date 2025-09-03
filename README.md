@@ -9,8 +9,10 @@ January and March recorded the highest average natural gas prices, each around 1
 
 Created daily records from 2020-10-31 to 2024-09-30 and filled missing daily price data using linear interpolation which allows continuous estimates of prices across all days 
 
-Utilized an ARIMA(2,1,2) model to forecast daily gas prices, training on 80% of historical data and validating on the remaining 20%. The model achieved an RMSE of 0.9360 and MAE of 0.7826, indicating reasonable accuracy. The forecast extends from late September 2024 to September 30, 2025, supporting detailed planning, forecasting and trend analysis.
+The chart shows gas price estimates using an ARIMA(2,1,2) model from 2021 to September 2025. Historical prices up to mid-2024 fluctuate between 10 and 12.5, peaking around 2023–2024. The forecast, starting October 2024 (red dashed line), remains stable around 12.5, indicating a steady trend. The model, trained on 80% of historical data and validated on 20%, achieved an RMSE of 0.9360 and MAE of 0.7826, supporting detailed planning, forecasting, and trend analysis.
 
 Both ARIMA and SARIMA models were evaluated, but ARIMA outperformed SARIMA with significantly lower RMSE (0.9360 vs. 1.6841) and MAE (0.7826 vs. 1.4316), confirming it as the more reliable model for forecasting gas prices.
+
+The storage contract simulation indicates a net value of $0.28, derived from a single injection of 1 MMBtu on June 1, 2024, and withdrawal of 1 MMBtu on December 1, 2024, with a maximum capacity of 10 MMBtu. The total revenue of $11.8 from withdrawal exceeds the purchase cost of $11.4, yielding a $0.4 profit, though this is offset by a $0.121 storage fee over the period. This suggests a modest profitability, sensitive to price differences and storage costs.
 
 
